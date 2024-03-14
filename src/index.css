@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.main {
+  background-color: #ddd;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: left;
+}
+.main nav,
+.main footer {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+}
+.main footer {
+  gap: 10px;
+}
+.main section {
+  margin-block: 10px;
+}
+.side-border-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.side-border-table th,
+.side-border-table td {
+  border: none;
+  border: 1px dashed black;
+  padding: 8px;
+  position: relative;
+}
+
+.side-border-table th .left-border,
+.side-border-table td .left-border {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 5px;
+  border-left: 1px dashed black;
+}
+
+.side-border-table th .right-border,
+.side-border-table td .right-border {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 5px;
+  border-right: 1px dashed black;
+}
+.social-link {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+}
+.social-mid {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  gap: 5px;
+}
+.main nav div {
+  float: left;
+}
+.nav-com {
+  border-bottom: 1px solid #272727;
+  color: #272727;
+  font-size: 13px;
+  cursor: pointer;
+}
+.no-border {
+  border-bottom: none;
+}
+.tw-connect-wallet,
+.tw-connected-wallet {
+  padding: 0 !important;
+  background: transparent !important;
+  color: #272727 !important;
+  min-width: 70px !important;
+  font-size: 13px !important;
+  cursor: pointer !important;
+  border: none !important;
+}
+
+.tw-connected-wallet img,
+.tw-connected-wallet__balance {
+  display: none !important;
+}
+.tw-connected-wallet__address {
+  color: #272727 !important;
+  min-width: 70px !important;
+  font-size: 13px !important;
+  cursor: pointer !important;
+}
+.no-btn {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid #272727 !important;
+  padding-inline: 0 !important;
+}
+.input {
+  background: transparent !important;
+  border: none !important;
+  outline: none;
+  text-align: center !important;
+}
+.input::placeholder {
+  text-align: center !important;
+}
+@media screen and (max-width: 426px) {
+  .foot-border {
+    letter-spacing: 1.5px !important;
+  }
+}
