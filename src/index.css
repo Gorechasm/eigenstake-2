@@ -29,6 +29,9 @@ code {
   align-items: flex-start;
   justify-content: left;
 }
+.main nav a {
+  margin-inline: 5px;
+}
 .main footer {
   gap: 10px;
 }
